@@ -1,3 +1,5 @@
+package java.com.ana.solid.i;
+
 public class WashingMachine implements MachineActions {
 
     @Override

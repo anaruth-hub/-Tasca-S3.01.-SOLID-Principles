@@ -1,4 +1,6 @@
 package com.ana.solid.s;
 
-public class RegistrationResult {
+public enum RegistrationResult {
+    REGISTERED,
+    NOT_CONFIRMED
 }

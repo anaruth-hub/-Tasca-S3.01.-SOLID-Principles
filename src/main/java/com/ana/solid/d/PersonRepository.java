@@ -1,4 +1,5 @@
 package com.ana.solid.d;
 
-public class PersonRepository {
+public interface PersonRepository {
+    void save(Person person);
 }

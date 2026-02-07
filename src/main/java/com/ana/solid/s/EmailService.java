@@ -1,4 +1,5 @@
 package com.ana.solid.s;
 
-public class EmailService {
+public interface EmailService {
+    void sendConfirmationEmail(String email);
 }

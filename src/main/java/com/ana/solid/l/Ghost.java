@@ -1,3 +1,7 @@
+package com.ana.solid.l;
+
+import java.lang.Character;
+
 public class Ghost extends Character {
     @Override
     public void attack() {

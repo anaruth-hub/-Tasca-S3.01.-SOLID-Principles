@@ -1,3 +1,5 @@
+package java.com.ana.solid.o;
+
 public class InstrumentPlayer {
     public void play(String instrument) {
         if ("guitar".equals(instrument)) {

@@ -1,3 +1,5 @@
+package java.com.ana.solid.i;
+
 public class AirConditioner implements MachineActions {
 
     @Override
