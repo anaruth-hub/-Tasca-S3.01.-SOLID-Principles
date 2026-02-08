@@ -1,6 +1,6 @@
-package java.com.ana.solid.i;
+package com.ana.solid.i;
 
-public class AirConditioner implements MachineActions {
+public final class AirConditioner implements Switchable, Heater, Cooler {
 
     @Override
     public void turnOn() {
@@ -21,10 +21,4 @@ public class AirConditioner implements MachineActions {
     public void cool() {
         System.out.println("AirConditioner is cooling.");
     }
-
-    @Override
-    public void wash() {
-        System.out.println("Wash operation not supported by AirConditioner.");
-    }
 }
-

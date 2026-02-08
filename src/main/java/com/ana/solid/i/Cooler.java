@@ -1,4 +1,5 @@
 package com.ana.solid.i;
 
-public class Cooler {
+public interface Cooler {
+    void cool();
 }

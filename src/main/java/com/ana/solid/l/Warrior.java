@@ -1,8 +1,7 @@
 package com.ana.solid.l;
 
-import java.lang.Character;
+public final class Warrior extends Character implements Damageable {
 
-public class Warrior extends Character {
     @Override
     public void attack() {
         System.out.println("The warrior strikes with a sword.");
@@ -10,6 +9,7 @@ public class Warrior extends Character {
 
     @Override
     public void takeDamage(int points) {
-        System.out.println("The warrior resists and only takes " + (points / 2) + " points of damage.");
+        int effective = points / 2;
+        System.out.println("The warrior resists and only takes " + effective + " points of damage.");
     }
 }

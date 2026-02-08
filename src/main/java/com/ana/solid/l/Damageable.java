@@ -1,4 +1,5 @@
 package com.ana.solid.l;
 
-public class Damageable {
+public interface Damageable {
+    void takeDamage(int points);
 }

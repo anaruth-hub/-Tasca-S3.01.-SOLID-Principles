@@ -1,22 +1,22 @@
-package java.com.ana.solid.o;
+package com.ana.solid.o;
 
-public class InstrumentPlayer {
-    public void play(String instrument) {
-        if ("guitar".equals(instrument)) {
-            System.out.println("🎸 Strumming the guitar");
-        } else if ("drums".equals(instrument)) {
-            System.out.println("🥁 Beating the drums");
-        } else if ("piano".equals(instrument)) {
-            System.out.println("🎹 Playing the piano");
-        } else {
-            System.out.println("🔇 Unknown instrument");
-        }
+import java.util.Map;
+import java.util.Objects;
+
+public final class InstrumentPlayer {
+
+    private final Map<String, Instrument> instrumentsByName;
+
+    public InstrumentPlayer(Map<String, Instrument> instrumentsByName) {
+        this.instrumentsByName = Map.copyOf(Objects.requireNonNull(instrumentsByName, "instrumentsByName cannot be null"));
     }
 
-    public static void main(String[] args) {
-        InstrumentPlayer player = new InstrumentPlayer();
-        player.play("guitar");
-        player.play("drums");
-        player.play("piano");
+    public void play(String instrumentName) {
+        Objects.requireNonNull(instrumentName, "instrumentName cannot be null");
+        Instrument instrument = instrumentsByName.get(instrumentName.toLowerCase());
+        if (instrument == null) {
+            throw new UnknownInstrumentException(instrumentName);
+        }
+        instrument.play();
     }
 }

@@ -1,4 +1,5 @@
 package com.ana.solid.i;
 
-public class Washable {
+public interface Washable {
+    void wash();
 }

@@ -1,4 +1,5 @@
 package com.ana.solid.i;
 
-public class Heater {
+public interface Heater {
+    void heat();
 }

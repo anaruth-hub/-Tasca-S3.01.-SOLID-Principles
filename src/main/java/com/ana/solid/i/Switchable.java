@@ -1,4 +1,6 @@
 package com.ana.solid.i;
 
-public class Switchable {
+public interface Switchable {
+    void turnOn();
+    void turnOff();
 }

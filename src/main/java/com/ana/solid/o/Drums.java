@@ -1,4 +1,14 @@
 package com.ana.solid.o;
 
-public class Drums {
+public final class Drums implements Instrument {
+
+    @Override
+    public String name() {
+        return "drums";
+    }
+
+    @Override
+    public void play() {
+        System.out.println("🥁 Beating the drums");
+    }
 }

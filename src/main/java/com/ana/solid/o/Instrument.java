@@ -1,4 +1,6 @@
 package com.ana.solid.o;
 
-public class Instrument {
+public interface Instrument {
+    String name();
+    void play();
 }
