@@ -65,7 +65,8 @@ I separated responsibilities into dedicated classes:
 - Injected them into `InstrumentPlayer` using a `Map<String, Instrument>`.
 
 ### Why it’s better
-- To add a new instrument, I only add a new class implementing `Instrument` and register it in the map.
+- To add a new instrument, I only add a new class implementing `Instrument` and register it as 
+a dependency. The existing play logic remains unchanged.”
 - Cleaner code, easier testing, no long conditional chains.
 
 ---
