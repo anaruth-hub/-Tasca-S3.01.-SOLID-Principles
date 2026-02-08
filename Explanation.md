@@ -1,3 +1,10 @@
+## Contents
+- SRP (S)
+- DIP (D)
+- OCP (O)
+- ISP (I)
+- LSP (L)
+
 # Explanation — SOLID Principles (S, O, L, I, D)
 
 This document summarizes what was wrong in the original design, why it violated SOLID principles, what changes were applied, and why the refactor is better.
